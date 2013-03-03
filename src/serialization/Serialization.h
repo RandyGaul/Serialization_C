@@ -10,9 +10,23 @@
 
 typedef char * string;
 
+#define SERIALIZE( TYPE, OBJ, FP ) \
+  Serialize##TYPE( &OBJ, FP )
+
+#define DESERIALIZE( TYPE, OBJ, FP ) \
+  Deserialize##TYPE( &OBJ, FP )
+
 void Serializeint( int a, FILE *fp );
 void Serializefloat( float a, FILE *fp );
 void Serializestring( string a, FILE *fp );
+void Serializechar( char a, FILE *fp );
+void SerializeType( const char *type, FILE *fp );
+void SerializeMember( const char *member, FILE *fp );
+
+void Deserializeint( int *a, FILE *fp );
+void Deserializefloat( float *a, FILE *fp );
+void Deserializestring( string *a, FILE *fp );
+void DeserializerEatCloseBracket( FILE *fp );
 
 void ChangePadding( int level );
 void Padding( int increment, FILE *fp );

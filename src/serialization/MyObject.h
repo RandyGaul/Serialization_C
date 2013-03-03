@@ -10,7 +10,7 @@
 
 #include "DeclareStruct.h"
 #include "MyObjectData.h"
-#include "ReflectionDeclare.h"
+#include "SerializationDeclare.h"
 #include "MyObjectData.h"
 
 // Function pointers here!

@@ -9,7 +9,9 @@
 #include "Precompiled.h"
 
 #include "MyObject.h"
-#include "ReflectionDefine.h"
+#include "SerializeDefine.h"
+#include "MyObjectData.h"
+#include "DeserializeDefine.h"
 #include "MyObjectData.h"
 
 // In this file would be functions that operator on MyObject

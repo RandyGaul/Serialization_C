@@ -11,15 +11,33 @@
 
 int main( void )
 {
+  // Setup an object
   MyObject obj;
-  obj.id = "An id!";
+  obj.id = "An identifier!";
   obj.rotation = 0.1234f;
   obj.x = 5;
   obj.y = 10;
 
-  SerializeMyObject( &obj, stdout );
+  // Dump contents of our object
+  SERIALIZE( MyObject, obj, stdout );
+
+  // Get some space so that we can place a string in here
+  obj.id = (string)malloc( sizeof( char ) * 100 );
 
   getchar( );
+
+  {
+    FILE *fp = fopen( "SerializedMyObject.txt", "r" );
+    printf( "Deserializing from SerializedMyObject.txt:\n" );
+    printf( "Press enter to deserialize...\n" );
+    getchar( );
+    DESERIALIZE( MyObject, obj, fp );
+    SERIALIZE( MyObject, obj, stdout );
+  }
+
+  getchar( );
+
+  free( obj.id );
 
   return 0;
 }

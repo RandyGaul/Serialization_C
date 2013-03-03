@@ -9,4 +9,5 @@
 #include <stdio.h>  // fscanf, fprintf, FILE, printf
 #include <stdlib.h> // malloc, NULL
 #include <string.h> // memcpy, memset
+#include <assert.h> // assert
 #include "Serialization.h"

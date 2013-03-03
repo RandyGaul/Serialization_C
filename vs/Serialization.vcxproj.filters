@@ -2,14 +2,17 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{EB9F65F9-D688-EA45-82D7-302AD40EC875}</UniqueIdentifier>
+      <UniqueIdentifier>{AA2D90C5-E4E0-0647-903D-949ABFF06890}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\serialization">
-      <UniqueIdentifier>{AEBEC3AC-8376-4D49-91E7-AFA4899496F3}</UniqueIdentifier>
+      <UniqueIdentifier>{6D8811BE-FD96-544B-9D3D-465CB0306C2F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\serialization\DeclareStruct.h">
+      <Filter>src\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\serialization\DeserializeDefine.h">
       <Filter>src\serialization</Filter>
     </ClInclude>
     <ClInclude Include="..\src\serialization\MyObject.h">
@@ -21,13 +24,13 @@
     <ClInclude Include="..\src\serialization\Precompiled.h">
       <Filter>src\serialization</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\serialization\ReflectionDeclare.h">
-      <Filter>src\serialization</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\serialization\ReflectionDefine.h">
-      <Filter>src\serialization</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\serialization\Serialization.h">
+      <Filter>src\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\serialization\SerializationDeclare.h">
+      <Filter>src\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\serialization\SerializeDefine.h">
       <Filter>src\serialization</Filter>
     </ClInclude>
   </ItemGroup>

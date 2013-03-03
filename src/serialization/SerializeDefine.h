@@ -11,8 +11,15 @@
 #undef _END
 
 #define _NAME( NAME ) \
-  void Serialize##NAME( NAME *obj, FILE *fp );
+  void Serialize##NAME( NAME *obj, FILE *fp ) \
+  {                                           \
+    SerializeType( #NAME, fp );               \
+    OpenBracket( fp );
 
-#define _MEMBER( TYPE, MEMBER )
+#define _MEMBER( TYPE, MEMBER )               \
+    SerializeMember( #MEMBER, fp );           \
+    Serialize##TYPE( obj->MEMBER, fp );
 
-#define _END( NAME )
+#define _END( NAME )                          \
+    CloseBracket( fp );                       \
+  }

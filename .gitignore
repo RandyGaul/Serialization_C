@@ -17,3 +17,5 @@
 *.suo
 *.user
 *.ipch
+*.i
+*.unsuccessfulbuild

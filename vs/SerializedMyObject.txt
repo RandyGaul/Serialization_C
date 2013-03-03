@@ -1,0 +1,7 @@
+MyObject
+{
+  id = "Unique Identifier"
+  x = 300
+  y = 42
+  rotation = 3.14
+}

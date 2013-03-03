@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AAED0274-6D83-FA4D-AEB2-35A83CDF4B5E}</ProjectGuid>
+    <ProjectGuid>{5501A569-F32E-1345-BF70-E0F5694A2AC1}</ProjectGuid>
     <RootNamespace>Serialization</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -110,18 +110,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\src\serialization\DeclareStruct.h" />
+    <ClInclude Include="..\src\serialization\DeserializeDefine.h" />
     <ClInclude Include="..\src\serialization\MyObject.h" />
     <ClInclude Include="..\src\serialization\MyObjectData.h" />
     <ClInclude Include="..\src\serialization\Precompiled.h" />
-    <ClInclude Include="..\src\serialization\ReflectionDeclare.h" />
-    <ClInclude Include="..\src\serialization\ReflectionDefine.h" />
     <ClInclude Include="..\src\serialization\Serialization.h" />
+    <ClInclude Include="..\src\serialization\SerializationDeclare.h" />
+    <ClInclude Include="..\src\serialization\SerializeDefine.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\serialization\driver.c">
     </ClCompile>
     <ClCompile Include="..\src\serialization\MyObject.c">
-      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
     </ClCompile>
     <ClCompile Include="..\src\serialization\Precompiled.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

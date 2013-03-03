@@ -11,10 +11,12 @@
 #undef _END
 
 #define _NAME( NAME ) \
-  typedef struct NAME{
+  void Deserialize##NAME( NAME *obj, FILE *fp ) \
+  {                                             \
 
-#define _MEMBER( TYPE, MEMBER ) \
-  TYPE MEMBER;
+#define _MEMBER( TYPE, MEMBER )                 \
+    Deserialize##TYPE( &obj->MEMBER, fp );      \
 
-#define _END( NAME ) \
-  } NAME;
+#define _END( NAME )                            \
+  DeserializerEatCloseBracket( fp );            \
+  }
