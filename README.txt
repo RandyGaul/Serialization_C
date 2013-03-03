@@ -34,3 +34,6 @@ SerializeDefine
 DeclareStruct
 
 See MyObject.c and MyObject.h for a clear example.
+
+Note:
+There isn't any robust error checking. Member names and type names can be used to assert that serialization is behaving as intended, as well as to assert that the file format is correct.
