@@ -6,9 +6,9 @@
 // in your own projects from scratch. Trust me, you don't
 // actually WANT to use any of this code in your project.
 
-_NAME( MyObject )
-_MEMBER( string, id )
-_MEMBER( int, x )
-_MEMBER( int, y )
-_MEMBER( float, rotation )
-_END( MyObject );
+NAME( MyObject )
+MEMBER( string, id )
+MEMBER( int, x )
+MEMBER( int, y )
+MEMBER( float, rotation )
+END( MyObject );

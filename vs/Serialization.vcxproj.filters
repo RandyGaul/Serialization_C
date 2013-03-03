@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{AA2D90C5-E4E0-0647-903D-949ABFF06890}</UniqueIdentifier>
+      <UniqueIdentifier>{5F1A5FDC-D7AE-F84A-9015-54371F4EC7A6}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\serialization">
-      <UniqueIdentifier>{6D8811BE-FD96-544B-9D3D-465CB0306C2F}</UniqueIdentifier>
+      <UniqueIdentifier>{BD933E3F-960C-644D-A094-D06CF3292E77}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

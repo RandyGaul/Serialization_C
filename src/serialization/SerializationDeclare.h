@@ -6,14 +6,14 @@
 // in your own projects from scratch. Trust me, you don't
 // actually WANT to use any of this code in your project.
 
-#undef _NAME
-#undef _MEMBER
-#undef _END
+#undef NAME
+#undef MEMBER
+#undef END
 
-#define _NAME( NAME ) \
+#define NAME( NAME ) \
   void Serialize##NAME( NAME *obj, FILE *fp ); \
   void Deserialize##NAME( NAME *obj, FILE *fp );
 
-#define _MEMBER( TYPE, MEMBER )
+#define MEMBER( TYPE, MEMBER )
 
-#define _END( NAME )
+#define END( NAME )

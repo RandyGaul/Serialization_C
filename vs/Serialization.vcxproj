@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5501A569-F32E-1345-BF70-E0F5694A2AC1}</ProjectGuid>
+    <ProjectGuid>{6C5C9FA0-93EF-6F4C-995F-F424FF818623}</ProjectGuid>
     <RootNamespace>Serialization</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>

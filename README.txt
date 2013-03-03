@@ -6,6 +6,9 @@
 // in your own projects from scratch. Trust me, you don't
 // actually WANT to use any of this code in your project.
 
+Summary:
+A proof of concept for a simple serialization technique. All changes to a structure are automatically propogated into all macro expansions, making for near zero maintenance programming. The format of serialization can be easily changed due to the nature of scanf scansets. Error checking can be implemented with similar macro expansion techniques without much of a hassle.
+
 To Use:
 Declare a struct in a header, do not use include protection. Declare struct with the following macros:
 

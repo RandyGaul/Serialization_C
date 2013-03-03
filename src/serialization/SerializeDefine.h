@@ -6,20 +6,20 @@
 // in your own projects from scratch. Trust me, you don't
 // actually WANT to use any of this code in your project.
 
-#undef _NAME
-#undef _MEMBER
-#undef _END
+#undef NAME
+#undef MEMBER
+#undef END
 
-#define _NAME( NAME ) \
+#define NAME( NAME ) \
   void Serialize##NAME( NAME *obj, FILE *fp ) \
   {                                           \
     SerializeType( #NAME, fp );               \
     OpenBracket( fp );
 
-#define _MEMBER( TYPE, MEMBER )               \
+#define MEMBER( TYPE, MEMBER )               \
     SerializeMember( #MEMBER, fp );           \
     Serialize##TYPE( obj->MEMBER, fp );
 
-#define _END( NAME )                          \
+#define END( NAME )                          \
     CloseBracket( fp );                       \
   }

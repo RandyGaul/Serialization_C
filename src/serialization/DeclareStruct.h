@@ -6,15 +6,15 @@
 // in your own projects from scratch. Trust me, you don't
 // actually WANT to use any of this code in your project.
 
-#undef _NAME
-#undef _MEMBER
-#undef _END
+#undef NAME
+#undef MEMBER
+#undef END
 
-#define _NAME( NAME ) \
+#define NAME( NAME ) \
   typedef struct NAME{
 
-#define _MEMBER( TYPE, MEMBER ) \
+#define MEMBER( TYPE, MEMBER ) \
   TYPE MEMBER;
 
-#define _END( NAME ) \
+#define END( NAME ) \
   } NAME;
