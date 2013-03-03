@@ -8,8 +8,9 @@
 
 #include "Precompiled.h"
 
-#include "MyObjectData.h"
+#include "MyObject.h"
 #include "ReflectionDefine.h"
+#include "MyObjectData.h"
 
 // In this file would be functions that operator on MyObject
 // I don't have any since I'm just demonstrating serialization
